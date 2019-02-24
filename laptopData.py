@@ -7,7 +7,7 @@ brands = []
 brands = laptop_data['Brand'].unique()
 for brand in brands:
     print(laptop_data.loc[laptop_data['Brand'] == brand])
-# apple_data.to_csv('apple_data.csv')
+apple_data.to_csv('apple_data.csv', index=False)
 #print(apple_data.at[0, 'Price'])
 # print(apple_data)
 
