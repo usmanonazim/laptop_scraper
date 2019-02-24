@@ -4,6 +4,7 @@ laptop_data = pd.read_csv('laptop_data.csv')
 #laptop_data.to_csv('laptop_data.csv', index=False)
 apple_data = laptop_data.loc[laptop_data['Brand'] == 'APPLE']
 brands = []
+#make an array of unique brands
 brands = laptop_data['Brand'].unique()
 for brand in brands:
     print(laptop_data.loc[laptop_data['Brand'] == brand])
